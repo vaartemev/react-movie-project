@@ -1,12 +1,10 @@
 import React from 'react';
 import './logo.scss';
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <div className="logo">
       netflixroulette
     </div>
   )
 }
-
-export default Logo;

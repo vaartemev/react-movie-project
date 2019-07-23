@@ -1,10 +1,11 @@
 import React from 'react';
-import '../../styles/footer/footer.scss';
+import { Logo } from '../logo/logo';
+import './footer.scss';
 
 export const Footer = () => {
   return (
     <div className="footer">
-      netflixroulette
+      <Logo />
     </div>
   )
 }
