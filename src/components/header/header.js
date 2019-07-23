@@ -1,13 +1,11 @@
 import React from 'react';
-import { Logo } from "../logo/logo";
-import { SearchField } from "../searchField/searchField";
+import { MovieInfo } from '../movieInfo/movieInfo';
 import './header.scss';
 
 export const Header = () => {
-    return (
-      <div className="header">
-        <Logo />
-		<SearchField />
-      </div>
-    )
-}
+  return (
+    <div className="header">
+      <MovieInfo />
+    </div>
+  );
+};

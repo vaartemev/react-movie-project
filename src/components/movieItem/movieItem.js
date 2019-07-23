@@ -1,19 +1,18 @@
 import React from 'react';
+import { MovieTitle } from '../movieTitle/movieTitle';
 import './movieItem.scss';
 
-export const MovieItem = (props) => {
+export const MovieItem = ({ src, title, year, genre }) => {
   return (
     <div className="movie">
-					<img src={props.src} className="movie__thumbnail"
-						alt="Guardian" />
-					<div className="movie__info">
-						<a className="movie__title">Guardian galaxy</a>
-						<span className="movie__year">2004</span>
+      <img src={src} className="movie__thumbnail" alt="Guardian" />
 
-						<div className="movie__genre">
-							Comedy
-						</div>
-					</div>
-				</div>
-  )
-}
+      <div className="movie__info">
+        <MovieTitle className="movie__title" title={title} />
+
+        <span className="movie__year">{year}</span>
+        <div className="movie__genre">{genre}</div>
+      </div>
+    </div>
+  );
+};

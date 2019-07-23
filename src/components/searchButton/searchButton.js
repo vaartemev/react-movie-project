@@ -1,8 +1,6 @@
 import React from 'react';
-import "./searchButton.scss";
+import './searchButton.scss';
 
-export const SearchButton = () => {
-  return (
-      <div className="search__button button">Search</div>
-  )
-}
+export const SearchButton = ({ classNames }) => {
+  return <div className={classNames}>Search</div>;
+};

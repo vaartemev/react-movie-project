@@ -8,10 +8,17 @@ export const SearchFilters = () => {
     <div className="filters">
       <div className="filters__title">Search by</div>
       <div className="filters__buttons">
-        <a className="filters__button filters__button-active button filter-by-title">Title</a>
-        <a className="filters__button button filter-by-genre">Genre</a>
+        <a
+          href="hello"
+          className="filters__button filters__button-active button filter-by-title"
+        >
+          Title
+        </a>
+        <a href="hello" className="filters__button button filter-by-genre">
+          Genre
+        </a>
       </div>
-      <SearchButton />
-  </div>
-  )
-}
+      <SearchButton classNames="search__button button" />
+    </div>
+  );
+};

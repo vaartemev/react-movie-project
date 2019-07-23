@@ -11,8 +11,8 @@ const App = () => {
   return (
     <div className="content-wrapper">
       <Header />
-	  <Additional />
-	  <MoviesList />
+      <Additional foundedMovies="8" />
+      <MoviesList />
       <Footer />
     </div>
   );
