@@ -1,5 +1,6 @@
 import React from 'react';
 import { MovieTitle } from '../movieTitle/movieTitle';
+import { Thumbnail } from '../thumbnail/thumbnail';
 
 import './aboutMovie.scss';
 
@@ -15,7 +16,7 @@ export const AboutMovie = ({
   return (
     <div className="about">
       <div className="about__img">
-        <img src={thumbnailPath} className="about__thumbnail" alt="" />
+        <Thumbnail src={thumbnailPath} className="about__thumbnail" />
       </div>
       <div className="about__content">
         <MovieTitle className="about__title" title={title} />
