@@ -20,7 +20,7 @@ export const AboutMovie = ({
       </div>
       <div className="about__content">
         <MovieTitle className="about__title" title={title} />
-        <div className="about__rating">4.1</div>
+        <div className="about__rating">{rating}</div>
         <h4 className="about__subtitle">{subtitle}</h4>
         <div className="about__additional">
           <h5 className="release-date">{year}</h5>
