@@ -1,8 +1,8 @@
 import React from 'react';
 import { MovieItem } from '../movieItem/movieItem';
-import './moviesList.scss';
+import './resultBody.scss';
 
-export const MoviesList = () => {
+export const ResultBody = () => {
   return (
     <div className="content">
       <div className="films-list">

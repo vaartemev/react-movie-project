@@ -1,25 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Header } from './components/header/header';
-import { Additional } from './components/additional/additional';
-import { MoviesList } from './components/moviesList/moviesList';
-import { Footer } from './components/footer/footer';
-import { ErrorBoundary } from './containers/errorBoundary/errorBoundary';
+import { App } from './App.js'
+import {Provider} from 'react-redux';
+import {configureStore} from './store';
 
 import './main.scss';
 
-const App = () => {
-  return (
-    <ErrorBoundary>
-      <div className="content-wrapper">
-        <Header />
-        <Additional foundedMovies="8" />
-        <MoviesList />
-        <Footer />
-      </div>
-    </ErrorBoundary>
-  );
-};
+const initialState = {};
+const store = configureStore(initialState);
 
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById('content-wrapper');
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+    </Provider>
+  , rootElement);
